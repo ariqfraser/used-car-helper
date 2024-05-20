@@ -1,0 +1,26 @@
+.checklist-wrapper {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    grid-column: span 2;
+}
+
+.check {
+    border: 2px solid black;
+    aspect-ratio: 1/1;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        font-weight: bold;
+    }
+}

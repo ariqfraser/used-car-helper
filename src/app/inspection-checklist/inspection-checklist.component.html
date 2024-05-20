@@ -1,0 +1,12 @@
+<div class="checklist-wrapper">
+    @for(section of data; track $index) {
+        <div class="heading">{{section.heading}}</div>
+        @for (item of section.checklist; track $index) {
+            <div class="check"></div>
+            <div class="info">
+                <p class="title">{{item.title}}</p>
+                <p class="description">{{item?.description}}</p>
+            </div>
+        }
+    }
+</div>
